@@ -1,0 +1,9 @@
+module HC5T4 where
+
+biggerThan10 :: Int -> Bool
+biggerThan10 = \x -> x > 10
+
+main :: IO ()
+main = do
+    print (biggerThan10 5)
+    print (biggerThan10 15)

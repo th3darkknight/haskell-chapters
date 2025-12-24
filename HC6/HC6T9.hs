@@ -1,0 +1,8 @@
+module HC6T9 where
+
+myMap :: (a -> b) -> [a] -> [b]
+myMap _ [] = []
+myMap f (x:xs) = f x : myMap f xs
+
+main :: IO ()
+main = print (myMap (*2) [1,2,3,4])  -- [2,4,6,8]
